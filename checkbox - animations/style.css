@@ -1,0 +1,110 @@
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ec6b97;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+}
+.wrapper section {
+    margin-bottom: 40px;
+}
+
+/* --- CHECKBOX --- */
+#checkbox {
+    display: none;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.4px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.checkbox-label::before {
+    content: '';
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: white;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='40' viewBox='0 0 30 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5001 25.9767L8.38383 20.4884L6.61633 22.845L12.5001 30.69L24.6338 14.5117L22.8663 12.155L12.5001 25.9767Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .3s ease-in-out;
+}
+#checkbox:checked + .checkbox-label::before {
+    background-color: #07bdac;
+}
+
+/* --- POWER BUTTON --- */
+.power-button {
+    width: 6.8rem;
+    height: 3rem;
+    background-color: #dedede;
+    border-radius: 32px;
+}
+#power-button {
+    display: none;
+}
+.toggle {
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fcfff4;
+    border: 1px solid #dedede;
+    border-radius: 32px;
+    box-shadow: none;
+    box-sizing: border-box;
+    transition: .3s cubic-bezier(0.895, 0.07, 0.685, 0.68)
+} 
+.toggle::before {
+    content: "On";
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 0;
+    top: 14px;
+    left: 12px;
+}
+.toggle::after {
+    content: "Off";
+    color: rgb(153,153,153);
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 14px;
+    top: 14px;
+    left: 10px;
+}
+
+#power-button:checked + .toggle {
+    left: 3.7rem;
+    background-color: #07bdac;
+}
+#power-button:checked + .toggle::after {
+   font-size: 0;
+}
+#power-button:checked + .toggle::before {
+    font-size: 14px;
+}
