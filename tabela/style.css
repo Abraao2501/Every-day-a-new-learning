@@ -1,0 +1,57 @@
+.toggleContainer {
+    width: 3rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+
+    transition: .5s;
+}
+.toggleButton {
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+
+    margin-left: 0.3rem;
+
+    background-color: #6d5456;
+    
+    transition: .5s;
+}
+
+th {
+    transition: .5s;
+}
+td {
+    transition: .5s;
+}
+
+
+/*Classes do modo noturno*/
+.toggleButtonActived {
+    margin-left: 1.5rem;
+    background-color: white;
+}
+.toggleContainerActived {
+    background-color: #755e5f
+}
+.thActived,
+.tdActived {
+    background-color: #3d3434;
+    color: white;
+}
+.buttonActived {
+    background-color: #755e5f;
+    color: white;
+}
+.theadActived {
+    background-color: #221d1d;
+    color: white;
+}
+
+.toggleContainer:hover {
+    background-color: rgba(255, 255, 255, 0.644);
+    cursor: pointer;
+  }

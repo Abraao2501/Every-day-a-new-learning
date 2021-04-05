@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      /*Importando fonte Quicksand*/
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap");
+
+      /*all elements*/
+      * {
+        font-family: "Quicksand", sans-serif;
+        font-size: 16px;
+
+        padding: 0;
+        margin: 0;
+      }
+
+      thead {
+        background-color: #6d5456;
+        color: white;
+      }
+
+      td {
+        color: rgba(109, 84, 86, 1);
+      }
+
+      button {
+        background-color: rgba(109, 84, 86, 1);
+        color: white;
+
+        width: 8rem;
+        height: 2rem;
+
+        font-size: 0.8rem;
+        font-weight: 600;
+
+        border: none;
+        border-radius: 10px;
+
+        transition: 0.5s;
+      }
+      button:hover {
+        background-color: rgba(109, 84, 86, 0.855555);
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Controle de Pedidos</title>
+  </head>
+  <body>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>
+            <div class="toggleContainer">
+              <div class="toggleButton"></div>
+            </div>
+          </th>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">CPF</th>
+          <th scope="col">Pass</th>
+          <th scope="col">Valor Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">1</th>
+          <td>Júlio Lucas dos Santos</td>
+          <td>057.677.365-56</td>
+          <td>6598</td>
+          <td>R$20.50</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">2</th>
+          <td>Jacob Borges Nascimento</td>
+          <td>598.647.321-64</td>
+          <td>7865</td>
+          <td>R$125.99</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">3</th>
+          <td>Felipe Rangel Ribeiro</td>
+          <td>037.922.990-03</td>
+          <td>7598</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">4</th>
+          <td>Iris Gadelha Barbosa</td>
+          <td>467.114.000-46</td>
+          <td>4572</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">5</th>
+          <td>Timóteo Monteiro Lousado</td>
+          <td>976.803.440-86</td>
+          <td>9686</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">6</th>
+          <td>António Toste Rosado</td>
+          <td>121.524.610-29</td>
+          <td>8667</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">7</th>
+          <td>Irís Cardoso Galvão</td>
+          <td>121.524.610-29</td>
+          <td>7472</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">8</th>
+          <td>Aliana Murtinho Barbosa</td>
+          <td>636.409.240-37</td>
+          <td>5313</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">9</th>
+          <td>Latifa Bentes Monforte</td>
+          <td>927.001.530-06</td>
+          <td>7639</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">10</th>
+          <td>Gabriella Varão Conceição</td>
+          <td>300.067.220-67</td>
+          <td>7748</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">11</th>
+          <td>Joshua Sanches Tabanez</td>
+          <td>369.454.000-85</td>
+          <td>5278</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">12</th>
+          <td>Julieta Xisto Caminha</td>
+          <td>942.591.760-48</td>
+          <td>8192</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">13</th>
+          <td>Andrei Sá Soverosa</td>
+          <td>670.840.170-38</td>
+          <td>1508</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">14</th>
+          <td>Andrea Castanheira Quental</td>
+          <td>092.779.830-19</td>
+          <td>4894</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">15</th>
+          <td>Israel Faia</td>
+          <td>142.764.600-77</td>
+          <td>3367</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">16</th>
+          <td>Filomena Marçal Gabeira</td>
+          <td>054.500.710-00</td>
+          <td>3643</td>
+          <td>R$500.65</td>
+        </tr>
+        <tr>
+          <th><button>Verificar Pedido</button></th>
+          <th scope="row">17</th>
+          <td>Eduarda Ferraço Palos</td>
+          <td>091.005.163-00</td>
+          <td>8223</td>
+          <td>R$500.65</td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="data.js"></script>
+  </body>
+</html>
